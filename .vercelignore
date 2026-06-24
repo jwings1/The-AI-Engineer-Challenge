@@ -1,8 +1,9 @@
-# The backend (api/index.py) is deployed from the repo root via vercel.json.
-# Keep the upload lean by excluding the separately-deployed frontend and other
-# non-backend artifacts.
-frontend
+# Single Vercel project: Next.js frontend (repo root) + FastAPI function (/api).
+# Keep the upload lean and never ship secrets or build artifacts.
+.env
+.env*.local
 node_modules
+.next
 .venv
 .playwright-mcp
 *.png

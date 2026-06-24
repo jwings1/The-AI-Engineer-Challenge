@@ -167,3 +167,10 @@ cython_debug/
 # Playwright MCP session artifacts + local verification screenshots
 .playwright-mcp/
 mindfulchat-*.png
+
+# Node / Next.js (the frontend now lives at the repo root)
+/node_modules
+/.next
+/out
+*.tsbuildinfo
+.env*.local
