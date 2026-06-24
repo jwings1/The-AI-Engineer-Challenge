@@ -1,0 +1,10 @@
+# The backend (api/index.py) is deployed from the repo root via vercel.json.
+# Keep the upload lean by excluding the separately-deployed frontend and other
+# non-backend artifacts.
+frontend
+node_modules
+.venv
+.playwright-mcp
+*.png
+*.ipynb
+docs
